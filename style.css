@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 600;
+   /* background-color: #fff; */
+   color: wheat;
+   outline: none;
+   border: none;
+}
+
+.weather-card {
+   /* min-height: 100vh; */
+   /* width: 100%; */
+   /* display: flex; */
+   /* align-items: top; */
+   /* background-color: rgb(34, 34, 34); */
+   /* padding: 100px 0; */
+}
+
+.container {
+   /* width: 90%; */
+   max-width: 400px;
+   text-align: center;
+   /* background-color: #00919F; */
+   margin: 0 auto;
+   height: 600px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 100px 0;
+}
+
+.container::after {
+   position: absolute;
+   content: '';
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   height: 100%;
+   width: 100%;
+   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80);
+   background-position: center;
+   background-size: cover;
+   /* filter: blur(3px); */
+
+   z-index: -1;
+}
+
+form {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 50px;
+   display: flex;
+   /* align-items: center; */
+   /* justify-content: center; */
+}
+
+form input {
+
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   padding: 0.7rem;
+   color: white;
+   /* border: 1px solid white; */
+   /* border-radius: 10px; */
+}
+
+form button[type="submit"] {
+   width: 20%;
+   height: 100%;
+   cursor: pointer;
+   background-color: white;
+   font-size: 3rem;
+   color: black;
+   
+}
+
+ion-icon {
+   color:black;
+   /* color: white; */
+}
